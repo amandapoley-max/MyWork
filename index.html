@@ -3,265 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amanda Poley | Portfolio</title>
+    <title>Amanda Poley | Program Management Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; }
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .github-card { background-color: #161b22; border: 1px solid #30363d; border-radius: 8px; transition: border-color 0.3s; }
-        .github-card:hover { border-color: #58a6ff; }
-        .gradient-text { background: linear-gradient(90deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .skill-tag { background-color: #21262d; border: 1px solid #30363d; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; color: #8b949e; }
-        .timeline-border { border-left: 2px solid #30363d; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .github-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #58a6ff, #bc8cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link:hover {
+            color: #58a6ff;
+        }
     </style>
 </head>
-<body class="antialiased overflow-x-hidden">
+<body class="antialiased">
 
-    <nav class="sticky top-0 z-50 bg-[#0d1117]/95 backdrop-blur-sm border-b border-[#30363d] px-6 py-4">
+    <nav class="sticky top-0 z-50 bg-[#0d1117]/80 backdrop-blur-md border-b border-[#30363d] px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <span class="text-xl font-bold tracking-tight">Amanda<span class="text-[#58a6ff]">Poley</span></span>
-            <div class="hidden md:flex space-x-6 text-sm font-medium items-center text-[#8b949e]">
-                <a href="#summary" class="hover:text-[#58a6ff] transition">About</a>
-                <a href="#history" class="hover:text-[#58a6ff] transition">Experience</a>
-                <a href="#projects" class="hover:text-[#58a6ff] transition">Case Studies</a>
-                <a href="#metrics" class="hover:text-[#58a6ff] transition">Impact</a>
-                <div class="h-4 w-px bg-[#30363d]"></div>
-                <a href="https://linkedin.com/in/amandapoley" target="_blank" class="text-lg hover:text-[#58a6ff]"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:amanda.poley@gmail.com" class="text-lg hover:text-[#58a6ff]"><i class="fa-solid fa-envelope"></i></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#summary" class="nav-link transition">Summary</a>
+                <a href="#metrics" class="nav-link transition">KPIs</a>
+                <a href="#projects" class="nav-link transition">Projects</a>
+                <a href="#scale" class="nav-link transition">Scale</a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 pt-24 pb-12">
-        <div class="reveal active">
-            <p class="text-[#58a6ff] font-mono text-sm mb-2">Houston, TX • Sr. Manager Instructional Design / Program Manager</p>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Digital Transformation & <br><span class="gradient-text">Agile Program Scaling</span></h1>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-xs font-bold text-[#8b949e] uppercase tracking-widest">Digital Transformation</span>
-                <span class="text-[#30363d]">|</span>
-                <span class="text-xs font-bold text-[#8b949e] uppercase tracking-widest">Agile Program Scaling</span>
-                <span class="text-[#30363d]">|</span>
-                <span class="text-xs font-bold text-[#8b949e] uppercase tracking-widest">Executive Stakeholder Alignment</span>
-            </div>
-            <div class="flex flex-wrap gap-4 mb-12">
-                <span class="bg-[#238636]/20 text-[#3fb950] border border-[#238636] px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
-                    <i class="fa-solid fa-award"></i> Brandon Hall Gold Winner - Best Indirect Onboarding
-                </span>
-                <span class="bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb] px-4 py-2 rounded-full text-sm font-semibold">MBA Graduate</span>
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+        <div class="reveal">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Sr. Manager, Instructional Design & <span class="gradient-text">Program Manager</span></h1>
+            <p class="text-xl text-[#8b949e] mb-8 max-w-3xl">Houston, TX | Digital Transformation • Agile Program Scaling • Executive Stakeholder Alignment</p>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 text-xs font-semibold bg-[#238636] text-white rounded-full">Brandon Hall Gold Winner</span>
+                <span class="px-3 py-1 text-xs font-semibold bg-[#1f6feb] text-white rounded-full">MBA</span>
+                <span class="px-3 py-1 text-xs font-semibold border border-[#30363d] rounded-full">Verizon Consumer Group Specialist</span>
             </div>
         </div>
     </header>
 
-    <section id="summary" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <div class="reveal github-card p-8 md:p-12">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
-                <i class="fa-solid fa-user-tie text-[#58a6ff]"></i> Professional Summary
+    <section id="summary" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="reveal github-card p-8">
+            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-book-open text-[#58a6ff]"></i> Professional Summary
             </h2>
             <p class="text-lg leading-relaxed text-[#8b949e]">
-                With over 20 years of experience in retail, sales, and corporate leadership, I am a results-oriented Learning & Development professional specializing in large-scale digital transformation and program operations. I am an expert in the <strong>ADDIE</strong> and <strong>Design Thinking</strong> methodologies, which I have leveraged to overhaul national onboarding and leadership programs, including a high-impact initiative that drove over <strong>$10.83 million in measurable ROI</strong>. My career is defined by my ability to align executive stakeholders and implement innovative AI and simulation technologies to accelerate speed-to-competency and optimize training efficiency across global distributed teams.
+                With over 20 years of experience in retail, sales, and corporate leadership, I am a results-oriented Learning & Development professional specializing in large-scale digital transformation and program operations. I am an expert in the ADDIE and Design Thinking methodologies, which I have leveraged to overhaul national onboarding and leadership programs, including a high-impact initiative that drove over $10.83 million in measurable ROI. My career is defined by my ability to align executive stakeholders and implement innovative AI and simulation technologies to accelerate speed-to-competency and optimize training efficiency across global distributed teams.
             </p>
         </div>
     </section>
 
-    <section id="expert" class="max-w-6xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold mb-8 text-white">Strategic Focus & Technical Stack</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-                <h3 class="text-sm font-bold text-[#8b949e] uppercase tracking-widest">Core Identity Focus</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag">Program Leadership & Strategy</span>
-                    <span class="skill-tag">Certification Assessment Design</span>
-                    <span class="skill-tag">Strategic Program Ownership</span>
-                    <span class="skill-tag">Scalable Onboarding & Development</span>
-                    <span class="skill-tag">LMS Implementation & Analytics</span>
-                    <span class="skill-tag">Stakeholder Alignment (VP Level)</span>
-                    <span class="skill-tag">Kirkpatrick Model (L2-L4)</span>
-                    <span class="skill-tag">AI/Simulation Technology Adoption</span>
-                    <span class="skill-tag">Vendor & Budget Management</span>
+    <section id="metrics" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-semibold mb-8 reveal">Quantifiable Success Metrics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">Program ROI</p>
+                    <h3 class="text-3xl font-bold mt-2 text-[#3fb950]">$10.83M+</h3>
                 </div>
+                <p class="text-sm mt-4">Generated through Retail & Best Buy Onboarding initiatives.</p>
             </div>
-            <div class="space-y-4">
-                <h3 class="text-sm font-bold text-[#8b949e] uppercase tracking-widest">Tools & Methodologies</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag">Design Thinking</span>
-                    <span class="skill-tag">Human-Centered Design (HCD)</span>
-                    <span class="skill-tag">Articulate Storyline/Rise</span>
-                    <span class="skill-tag">Skyllful AI Simulator</span>
-                    <span class="skill-tag">Smartsheet Governance</span>
-                    <span class="skill-tag">Bloom's Taxonomy</span>
-                    <span class="skill-tag">Performance Evaluations</span>
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">Operational Efficiency</p>
+                    <h3 class="text-3xl font-bold mt-2 text-[#58a6ff]">40%+</h3>
                 </div>
+                <p class="text-sm mt-4">Reduction in project turnaround times through process optimization.</p>
+            </div>
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">Process Optimization</p>
+                    <h3 class="text-3xl font-bold mt-2 text-[#bc8cff]">77%</h3>
+                </div>
+                <p class="text-sm mt-4">Decrease in project task redundancy across program lifecycles.</p>
+            </div>
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">Time-to-Competency</p>
+                    <h3 class="text-3xl font-bold mt-2 text-[#f85149]">&lt; 2 Weeks</h3>
+                </div>
+                <p class="text-sm mt-4">Compressed leadership training from 90 days to under 14 days.</p>
+            </div>
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">Quality Governance</p>
+                    <h3 class="text-3xl font-bold mt-2 text-white">150+</h3>
+                </div>
+                <p class="text-sm mt-4">Performance observations conducted to certify 45+ national trainers.</p>
+            </div>
+            <div class="reveal github-card p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-[#8b949e] uppercase font-bold tracking-wider">AI Scalability</p>
+                    <h3 class="text-3xl font-bold mt-2 text-[#d29922]">81K+</h3>
+                </div>
+                <p class="text-sm mt-4">Lesson modes completed by 6,487 learners in 2025 AI pilot.</p>
             </div>
         </div>
     </section>
 
-    <section id="history" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <h2 class="text-2xl font-bold mb-8 text-white"><i class="fa-solid fa-timeline text-[#58a6ff] mr-2"></i> Career Journey</h2>
-        <div class="timeline-border ml-6 space-y-12">
-            <div class="reveal ml-8 github-card p-6">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Sr. Manager, Instructional Design & Program Management</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group (L&D Design)</p>
-                    </div>
-                    <p class="text-sm text-[#8b949e]">Jan 2022 — Dec 2025</p>
-                </div>
-                <ul class="text-sm text-[#8b949e] list-disc ml-4 space-y-2">
-                    <li>Defined Training Strategy & ROI: Drove <strong>$10.83 million</strong> in measurable ROI for Retail/Best Buy Onboarding.</li>
-                    <li>Tech Integration: Led adoption of AI simulation for <strong>6,487 learners</strong>.</li>
-                    <li>Curriculum Acceleration: Compressed leadership programs from 90 days to <strong>under 2 weeks</strong>.</li>
-                    <li>Operational Efficiency: Engineered lean tracking via Smartsheet, reducing task redundancy by <strong>77%</strong>.</li>
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-semibold mb-8 reveal">Major Project Wins</h2>
+        <div class="reveal github-card overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#161b22] border-bottom border-[#30363d]">
+                            <th class="p-4 font-semibold text-[#8b949e]">Project Name</th>
+                            <th class="p-4 font-semibold text-[#8b949e]">Business Challenge</th>
+                            <th class="p-4 font-semibold text-[#8b949e]">Strategic Action</th>
+                            <th class="p-4 font-semibold text-[#8b949e]">Measurable Result</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#30363d]">
+                        <tr>
+                            <td class="p-4 font-bold text-[#58a6ff]">National Retail & Best Buy Onboarding</td>
+                            <td class="p-4 text-sm">Strengthen sales process training across hubs while maintaining experiential tone.</td>
+                            <td class="p-4 text-sm">Unified governance framework; 150+ performance observations for trainer certification.</td>
+                            <td class="p-4 text-sm font-semibold text-[#3fb950]">$10.83M ROI; Speed-to-competency reduced (74 to &lt;60 days).</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-[#58a6ff]">Leadership Program Acceleration</td>
+                            <td class="p-4 text-sm">Requirement to ramp up new leaders in under 90 days.</td>
+                            <td class="p-4 text-sm">Architected multi-platform environment (Virtual, Social, In-store).</td>
+                            <td class="p-4 text-sm font-semibold text-[#3fb950]">Duration reduced to &lt;2 weeks; 77% redundancy reduction.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-[#58a6ff]">AI Call Simulator Digital Transformation</td>
+                            <td class="p-4 text-sm">Lack of scalable environment for sales conversation practice.</td>
+                            <td class="p-4 text-sm">End-to-end vendor selection; Smartsheet roadmap for access governance.</td>
+                            <td class="p-4 text-sm font-semibold text-[#3fb950]">Pivoted to New Hire Onboarding for sustained usage & ROI.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <div class="reveal github-card p-6">
+                <h3 class="text-center mb-4 text-[#8b949e] font-semibold uppercase text-sm">Program Timeline Reduction</h3>
+                <canvas id="reductionChart"></canvas>
+            </div>
+            <div class="reveal github-card p-6">
+                <div id="roiPlotly" class="w-full h-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scale" class="max-w-6xl mx-auto px-6 py-12 mb-20">
+        <h2 class="text-2xl font-semibold mb-8 reveal text-center">Enterprise Scale & Foundations</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="reveal github-card p-8">
+                <h3 class="text-xl font-bold mb-4">Workforce Impact</h3>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center border-b border-[#30363d] pb-2">
+                        <span class="text-[#8b949e]">Verizon Consumer Group Supported</span>
+                        <span class="font-semibold">14,249 People</span>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <span class="text-[#8b949e]">Indirectly Designed For</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-[#21262d] rounded border border-[#30363d] text-xs">TracPhone</span>
+                            <span class="px-2 py-1 bg-[#21262d] rounded border border-[#30363d] text-xs">Best Buy</span>
+                            <span class="px-2 py-1 bg-[#21262d] rounded border border-[#30363d] text-xs">Victra</span>
+                            <span class="px-2 py-1 bg-[#21262d] rounded border border-[#30363d] text-xs">Total by Verizon</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="reveal ml-8 github-card p-6 text-sm text-[#8b949e]">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div class="reveal github-card p-8">
+                <h3 class="text-xl font-bold mb-4">Education</h3>
+                <div class="space-y-4">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Instructional Designer</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group (L&D Design)</p>
+                        <p class="font-bold text-[#58a6ff]">M.B.A.</p>
+                        <p class="text-sm text-[#8b949e]">University of Phoenix</p>
                     </div>
-                    <p class="text-sm text-[#8b949e]">Jan 2019 — Dec 2022</p>
-                </div>
-                <p>Architected multi-platform environments (Virtual, Social, In-Store). Directed Design Thinking for vendor onboarding programs to maintain instructional intent across national rollouts.</p>
-            </div>
-            <div class="reveal ml-8 github-card p-6 text-sm text-[#8b949e]">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Sr. Trainer & Regional Training Supervisor</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group</p>
+                        <p class="font-bold text-[#58a6ff]">B.A. Communication Studies</p>
+                        <p class="text-sm text-[#8b949e]">Texas State University</p>
                     </div>
-                    <p class="text-sm text-[#8b949e]">Apr 2012 — Dec 2019</p>
-                </div>
-                <p>Managed diverse regional hubs ensuring 100% adherence to quality standards. Scaled delivery to reach <strong>500 participants weekly</strong>.</p>
-            </div>
-            <div class="reveal ml-8 github-card p-6 text-sm text-[#8b949e]">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Retail & Sales Leadership Roles</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group</p>
-                    </div>
-                    <p class="text-sm text-[#8b949e]">Oct 2004 — Apr 2012</p>
-                </div>
-                <p>Progressive roles in management and operations. Developed foundational expertise in frontline performance drivers and sales enablement.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <h2 class="text-2xl font-bold mb-8 text-white"><i class="fa-solid fa-flask text-[#bc8cff] mr-2"></i> Strategic Case Studies</h2>
-        
-        <div class="reveal github-card p-8 mb-8">
-            <h3 class="text-2xl font-bold text-white mb-6">National Retail Onboarding Redesign</h3>
-            <div class="grid md:grid-cols-5 gap-4 text-[10px] mb-8 uppercase font-bold tracking-widest">
-                <div class="bg-[#0d1117] p-4 rounded border border-[#30363d] text-[#58a6ff]">1. Analyze<br><span class="text-[#8b949e] font-normal lowercase mt-1 block">Identified product/sales learning gaps from executive feedback.</span></div>
-                <div class="bg-[#0d1117] p-4 rounded border border-[#30363d] text-[#58a6ff]">2. Design<br><span class="text-[#8b949e] font-normal lowercase mt-1 block">Architected virtual-to-in-store flow and POS tech governance.</span></div>
-                <div class="bg-[#0d1117] p-4 rounded border border-[#30363d] text-[#58a6ff]">3. Develop<br><span class="text-[#8b949e] font-normal lowercase mt-1 block">Organized global ID teams; built TTT and observation rubrics.</span></div>
-                <div class="bg-[#0d1117] p-4 rounded border border-[#30363d] text-[#58a6ff]">4. Implement<br><span class="text-[#8b949e] font-normal lowercase mt-1 block">TTT rollout for 40+ trainers with real-time feedback loops.</span></div>
-                <div class="bg-[#0d1117] p-4 rounded border border-[#30363d] text-[#3fb950]">5. Evaluate<br><span class="text-[#8b949e] font-normal lowercase mt-1 block">2bsp increase across key KPIs; speed-to-competency reduction.</span></div>
-            </div>
-            <p class="text-[#3fb950] font-bold text-lg"><i class="fa-solid fa-circle-check mr-2"></i>ROI Impact: $10.83 million generated.</p>
-        </div>
-
-        <div class="reveal github-card p-8">
-            <h3 class="text-2xl font-bold text-white mb-4">AI Roleplay Simulator: Pivot Strategy</h3>
-            <p class="text-sm text-[#8b949e] mb-6"><strong>Strategic Mandate:</strong> Lead end-to-end selection and pilot strategy to validate optimal business use cases and manage risk across Sales/IT.</p>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="text-sm">
-                    <p class="font-bold text-white mb-2 underline decoration-[#d29922]">The Action</p>
-                    <p>Tracked 33 users across 69 practice sessions. Data revealed users stopped practicing when facing friction without guidance.</p>
-                </div>
-                <div class="text-sm">
-                    <p class="font-bold text-white mb-2 underline decoration-[#d29922]">The Strategic Pivot</p>
-                    <p>Recommended integration exclusively for New Hire Onboarding to ensure structured environment and guaranteed ROI.</p>
-                </div>
-            </div>
-            <p class="mt-6 text-[#3fb950] font-bold italic">Technology Scale: 81,331 lesson modes completed.</p>
-        </div>
-    </section>
-
-    <section id="metrics" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <h2 class="text-2xl font-bold mb-8 reveal">Impact Dashboard</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="reveal github-card p-6 border-l-4 border-l-[#3fb950]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-1">Total Program ROI</p>
-                <p class="text-3xl font-bold">$10.83M+</p>
-            </div>
-            <div class="reveal github-card p-6 border-l-4 border-l-[#58a6ff]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-1">Turnaround Gain</p>
-                <p class="text-3xl font-bold">40%+</p>
-            </div>
-            <div class="reveal github-card p-6 border-l-4 border-l-[#bc8cff]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-1">Task Efficiency</p>
-                <p class="text-3xl font-bold">77%</p>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="reveal github-card p-6"><canvas id="efficiencyChart" height="250"></canvas></div>
-            <div id="scale" class="reveal github-card p-8 flex flex-col justify-center text-center">
-                <h3 class="text-[#8b949e] uppercase text-xs font-bold mb-4 tracking-widest">Enterprise Support Scale</h3>
-                <p class="text-5xl font-extrabold text-white">14,249</p>
-                <p class="text-sm text-[#8b949e] mt-2 italic">Verizon Consumer Group (Sales & Support)</p>
-                <div class="flex justify-center gap-2 mt-6 text-[9px] text-[#58a6ff] font-bold uppercase">
-                    <span>TracPhone</span> • <span>Best Buy</span> • <span>Victra</span> • <span>Total by Verizon</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-6xl mx-auto px-6 py-12 mb-20">
-        <div class="reveal github-card p-8">
-            <h2 class="text-2xl font-bold mb-6 text-white">Education & Credentials</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <p class="font-bold text-[#58a6ff] text-lg">M.B.A.</p>
-                    <p class="text-[#8b949e]">University of Phoenix</p>
-                </div>
-                <div>
-                    <p class="font-bold text-[#58a6ff] text-lg">B.S. Communication Studies</p>
-                    <p class="text-[#8b949e]">Texas State University</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="border-t border-[#30363d] py-12 text-center text-[#8b949e] text-sm">
-        <p>&copy; 2025 Amanda Poley | Sr. Manager, Learning Strategy</p>
+        <p>&copy; 2025 Amanda Poley | Sr. Manager, Learning Strategy & Program Operations</p>
     </footer>
 
     <script>
-        // Reveal Animations
+        // Scroll Animation Observer
+        const observerOptions = { threshold: 0.1 };
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-        }, { threshold: 0.1 });
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Chart Data from provided source
-        const ctx = document.getElementById('efficiencyChart').getContext('2d');
+        // Chart.js - Reduction Chart
+        const ctx = document.getElementById('reductionChart').getContext('2d');
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Leadership Ramp (Days)', 'Manual Tracking Pts', 'Onboarding Ramp (Days)'],
+                labels: ['Leadership Training', 'Project Redundancy', 'Onboarding Speed'],
                 datasets: [{
-                    label: 'Original', data: [90, 35, 74], backgroundColor: 'rgba(248, 81, 73, 0.4)', borderColor: '#f85149', borderWidth: 1
+                    label: 'Baseline (Days/Points)',
+                    data: [90, 35, 74],
+                    backgroundColor: '#30363d',
                 }, {
-                    label: 'Optimized', data: [14, 8, 59], backgroundColor: 'rgba(56, 139, 253, 0.4)', borderColor: '#58a6ff', borderWidth: 1
+                    label: 'Optimized (Days/Points)',
+                    data: [14, 8, 59],
+                    backgroundColor: '#58a6ff',
                 }]
             },
             options: {
-                responsive: true, maintainAspectRatio: false,
-                plugins: { legend: { labels: { color: '#c9d1d9', font: { family: 'Inter' } } } },
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#c9d1d9' } }
+                },
                 scales: {
-                    y: { grid: { color: '#30363d' }, ticks: { color: '#8b949e' } },
-                    x: { ticks: { color: '#8b949e' } }
+                    y: { beginAtZero: true, grid: { color: '#30363d' }, ticks: { color: '#8b949e' } },
+                    x: { grid: { display: false }, ticks: { color: '#8b949e' } }
                 }
             }
         });
+
+        // Plotly - ROI Indicator
+        const roiData = [{
+            type: "indicator",
+            mode: "number+delta",
+            value: 10.83,
+            number: { prefix: "$", suffix: "M" },
+            title: { text: "Measured Program ROI", font: { color: "#8b949e", size: 14 } },
+            delta: { reference: 0, position: "top", relative: false },
+            domain: { x: [0, 1], y: [0, 1] }
+        }];
+
+        const layout = {
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0)",
+            font: { color: "#c9d1d9", family: "Inter" },
+            height: 250,
+            margin: { t: 50, b: 0, l: 0, r: 0 }
+        };
+
+        Plotly.newPlot('roiPlotly', roiData, layout);
     </script>
 </body>
 </html>
