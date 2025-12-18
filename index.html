@@ -16,12 +16,15 @@
             font-family: 'Inter', sans-serif;
             background-color: #0d1117;
             color: #c9d1d9;
+            margin: 0;
+            opacity: 0; /* Hidden until scripts load */
+            transition: opacity 0.5s ease-in;
         }
 
         .reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
         }
 
         .reveal.active {
@@ -29,19 +32,10 @@
             transform: translateY(0);
         }
 
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
-
         .github-card {
             background-color: #161b22;
             border: 1px solid #30363d;
             border-radius: 8px;
-            transition: border-color 0.3s ease;
-        }
-
-        .github-card:hover {
-            border-color: #58a6ff;
         }
 
         .gradient-text {
@@ -55,14 +49,130 @@
 
     <nav class="sticky top-0 z-50 bg-[#0d1117]/90 backdrop-blur-sm border-b border-[#30363d] px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tight">Amanda<span class="text-[#58a6ff]">Poley</span></span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#summary" class="hover:text-[#58a6ff] transition">About</a>
-                <a href="#metrics" class="hover:text-[#58a6ff] transition">Impact</a>
-                <a href="#projects" class="hover:text-[#58a6ff] transition">Projects</a>
-                <a href="#enterprise" class="hover:text-[#58a6ff] transition">Scale</a>
+            <span class="text-xl font-bold tracking-tight text-white">Amanda<span class="text-[#58a6ff]">Poley</span></span>
+            <div class="flex space-x-6 items-center">
+                <a href="https://linkedin.com/in/amandapoley" target="_blank" class="hover:text-[#58a6ff] transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:amanda.poley@gmail.com" class="hover:text-[#58a6ff] transition text-xl"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 pt-24 pb-
+    <header class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+        <div class="reveal">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white">
+                Sr. Manager & <br>
+                <span class="gradient-text">Program Strategist</span>
+            </h1>
+            <p class="text-xl text-[#8b949e] max-w-2xl mb-8">
+                Driving <strong>Digital Transformation</strong>, <strong>Agile Program Scaling</strong>, and <strong>Executive Alignment</strong> at Enterprise scale.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <span class="bg-[#238636]/20 text-[#3fb950] border border-[#238636] px-4 py-2 rounded-full text-sm font-semibold">Brandon Hall Gold Winner</span>
+                <span class="bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb] px-4 py-2 rounded-full text-sm font-semibold">MBA Graduate</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="summary" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="reveal github-card p-8 md:p-12">
+            <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+                <i class="fa-solid fa-user-tie text-[#58a6ff]"></i> Professional Summary
+            </h2>
+            <p class="text-lg leading-relaxed text-[#8b949e]">
+                With over 20 years of experience in retail, sales, and corporate leadership, I am a results-oriented Learning & Development professional specializing in large-scale digital transformation and program operations. I am an expert in the <strong>ADDIE</strong> and <strong>Design Thinking</strong> methodologies, which I have leveraged to overhaul national onboarding and leadership programs, including a high-impact initiative that drove over <strong>$10.83 million in measurable ROI</strong>. My career is defined by my ability to align executive stakeholders and implement innovative AI and simulation technologies to accelerate speed-to-competency across global distributed teams.
+            </p>
+        </div>
+    </section>
+
+    <section id="metrics" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold mb-8 reveal text-white">Quantifiable Impact</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="reveal github-card p-6 border-l-4 border-l-[#3fb950]">
+                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2">Program ROI</p>
+                <p class="text-3xl font-bold text-white">$10.83M+</p>
+                <p class="text-sm text-[#8b949e] mt-2 italic">Generated through Retail/Best Buy Onboarding.</p>
+            </div>
+            <div class="reveal github-card p-6 border-l-4 border-l-[#58a6ff]">
+                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2">Time-to-Competency</p>
+                <p class="text-3xl font-bold text-white">&lt; 2 Weeks</p>
+                <p class="text-sm text-[#8b949e] mt-2 italic">Compressed leadership training from 90 days.</p>
+            </div>
+            <div class="reveal github-card p-6 border-l-4 border-l-[#bc8cff]">
+                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2">Operational Efficiency</p>
+                <p class="text-3xl font-bold text-white">40%+</p>
+                <p class="text-sm text-[#8b949e] mt-2 italic">Reduction in project turnaround times.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold mb-8 reveal text-white">Major Project Wins</h2>
+        <div class="space-y-6">
+            <div class="reveal github-card p-8">
+                <h3 class="text-xl font-bold text-[#58a6ff] mb-2">National Retail & Best Buy Onboarding</h3>
+                <p class="text-[#8b949e] mb-4">Established a unified governance framework, certifying 45+ trainers through 150+ performance observations. Speed-to-competency was reduced from 74 days to under 60.</p>
+                <p class="text-[#3fb950] font-bold"><i class="fa-solid fa-circle-check mr-2"></i>Result: $10.83M ROI Generated.</p>
+            </div>
+            <div class="reveal github-card p-8">
+                <h3 class="text-xl font-bold text-[#bc8cff] mb-2">AI Software Pilot & Implementation</h3>
+                <p class="text-[#8b949e] mb-4">Led end-to-end vendor selection and pilot strategy for sales conversation simulations. Used Smartsheet to manage risk, governance, and design timelines.</p>
+                <p class="text-[#3fb950] font-bold"><i class="fa-solid fa-circle-check mr-2"></i>Result: 81,331 lesson modes completed by 6,487 learners.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="reveal github-card p-6">
+                <canvas id="efficiencyChart" height="250"></canvas>
+            </div>
+            <div class="reveal github-card p-6 flex flex-col items-center justify-center">
+                <h3 class="text-sm font-bold uppercase text-[#8b949e] mb-4">Enterprise Workforce Support</h3>
+                <p class="text-5xl font-extrabold text-white">14,249</p>
+                <p class="text-[#8b949e] mt-2">Verizon Consumer Group (Sales & Support)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-[#30363d] py-12 text-center text-[#8b949e] text-sm">
+        <p>&copy; 2025 Amanda Poley | Houston, TX</p>
+    </footer>
+
+    <script>
+        // Ensure site only reveals after everything is ready
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+            
+            // Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Chart
+            const ctx = document.getElementById('efficiencyChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Leadership (Days)', 'Tasks (Count)'],
+                    datasets: [{
+                        label: 'Before', data: [90, 35], backgroundColor: '#f85149'
+                    }, {
+                        label: 'After Optimization', data: [14, 8], backgroundColor: '#58a6ff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { labels: { color: '#c9d1d9' } } },
+                    scales: {
+                        y: { grid: { color: '#30363d' }, ticks: { color: '#8b949e' } },
+                        x: { ticks: { color: '#8b949e' } }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
