@@ -19,6 +19,7 @@
         .gradient-text { background: linear-gradient(90deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .timeline-dot { position: relative; }
         .timeline-dot::before { content: ''; position: absolute; left: -25px; top: 5px; width: 12px; height: 12px; background: #58a6ff; border-radius: 50%; border: 3px solid #0d1117; }
+        .skill-tag { background-color: #21262d; border: 1px solid #30363d; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; color: #8b949e; }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
@@ -26,201 +27,75 @@
     <nav class="sticky top-0 z-50 bg-[#0d1117]/90 backdrop-blur-sm border-b border-[#30363d] px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <span class="text-xl font-bold tracking-tight">Amanda<span class="text-[#58a6ff]">Poley</span></span>
-            <div class="hidden md:flex space-x-6 text-sm font-medium items-center">
+            <div class="hidden md:flex space-x-6 text-sm font-medium items-center text-[#8b949e]">
                 <a href="#summary" class="hover:text-[#58a6ff]">About</a>
-                <a href="#history" class="hover:text-[#58a6ff]">History</a>
+                <a href="#expert" class="hover:text-[#58a6ff]">Expertise</a>
                 <a href="#projects" class="hover:text-[#58a6ff]">Case Studies</a>
                 <a href="#metrics" class="hover:text-[#58a6ff]">Impact</a>
                 <div class="h-4 w-px bg-[#30363d]"></div>
-                <a href="https://linkedin.com/in/amandapoley" target="_blank" class="text-lg"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:amanda.poley@gmail.com" class="text-lg"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/amandapoley" target="_blank" class="text-lg hover:text-[#58a6ff]"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:amanda.poley@gmail.com" class="text-lg hover:text-[#58a6ff]"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </nav>
 
     <header class="max-w-6xl mx-auto px-6 pt-24 pb-12">
         <div class="reveal active">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Sr. Manager & <br><span class="gradient-text">Program Strategist</span></h1>
-            <p class="text-xl text-[#8b949e] max-w-2xl mb-8">Scaling Excellence: Where Multi-Million Dollar ROI Meets Human-Centered Design and Enterprise Digital Transformation.</p>
+            <p class="text-[#58a6ff] font-mono text-sm mb-2">Houston, TX • Sr. Manager Instructional Design / Program Manager</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+                Digital Transformation & <br><span class="gradient-text">Agile Program Scaling</span>
+            </h1>
+            <p class="text-xl text-[#8b949e] max-w-2xl mb-8 leading-relaxed">
+                Expert in <strong>Executive Stakeholder Alignment</strong> and translating complex strategic objectives into measurable, high-impact enterprise learning solutions.
+            </p>
             <div class="flex flex-wrap gap-4">
-                <span class="bg-[#238636]/20 text-[#3fb950] border border-[#238636] px-4 py-2 rounded-full text-sm font-semibold">Brandon Hall Gold Winner</span>
-                <span class="bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb] px-4 py-2 rounded-full text-sm font-semibold">MBA Graduate</span>
+                <span class="bg-[#238636]/20 text-[#3fb950] border border-[#238636] px-4 py-2 rounded-full text-sm font-semibold">
+                    <i class="fa-solid fa-award mr-2"></i>Brandon Hall Gold: Best Indirect Onboarding
+                </span>
+                <span class="bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb] px-4 py-2 rounded-full text-sm font-semibold">MBA</span>
             </div>
         </div>
     </header>
 
-    <section id="history" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <h2 class="text-2xl font-bold mb-8 text-white"><i class="fa-solid fa-timeline text-[#58a6ff] mr-2"></i> Career Journey</h2>
-        <div class="border-l-2 border-[#30363d] ml-6 space-y-12">
-            <div class="reveal timeline-dot ml-8 github-card p-6">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Sr. Manager, Learning Strategy & Program Operations</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group</p>
-                    </div>
-                    <p class="text-sm text-[#8b949e]">Jan 2020 — Present</p>
-                </div>
-                <ul class="text-sm text-[#8b949e] list-disc ml-4 space-y-2">
-                    <li>Led the end-to-end design and national rollout of core onboarding and leadership programs.</li>
-                    <li>Managed digital transformation initiatives, including AI simulation pilots for 6,400+ learners.</li>
-                    <li>Aligned VP-level stakeholders to establish unified training standards and strategic roadmaps.</li>
-                </ul>
-            </div>
-            <div class="reveal timeline-dot ml-8 github-card p-6">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Sr. Trainer / Regional Supervisor</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group</p>
-                    </div>
-                    <p class="text-sm text-[#8b949e]">Apr 2012 — Dec 2019</p>
-                </div>
-                <p class="text-sm text-[#8b949e]">Managed diverse training teams across multiple regional hubs, scaling delivery to reach 500+ participants weekly while maintaining 100% adherence to quality standards.</p>
-            </div>
-            <div class="reveal timeline-dot ml-8 github-card p-6">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Retail & Sales Leadership</h3>
-                        <p class="text-[#58a6ff] font-medium">Verizon Consumer Group</p>
-                    </div>
-                    <p class="text-sm text-[#8b949e]">Oct 2004 — Apr 2012</p>
-                </div>
-                <p class="text-sm text-[#8b949e]">Progressive leadership roles in retail operations and sales management, establishing a deep understanding of frontline performance drivers.</p>
-            </div>
+    <section id="summary" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
+        <div class="reveal github-card p-8 md:p-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                <i class="fa-solid fa-user-tie text-[#58a6ff]"></i> Professional Summary
+            </h2>
+            <p class="text-lg leading-relaxed text-[#8b949e]">
+                With over 20 years of experience in retail, sales, and corporate leadership, I am a results-oriented Learning & Development professional specializing in large-scale digital transformation and program operations. I am an expert in the <strong>ADDIE</strong> and <strong>Design Thinking</strong> methodologies, which I have leveraged to overhaul national onboarding and leadership programs, including a high-impact initiative that drove over <strong>$10.83 million in measurable ROI</strong>. My career is defined by my ability to align executive stakeholders and implement innovative AI and simulation technologies to accelerate speed-to-competency across global distributed teams.
+            </p>
+        </div>
+    </section>
+
+    <section id="expert" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
+        <h2 class="text-2xl font-bold mb-8 text-white">Strategic Focus & Expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="skill-tag">Program Leadership</div>
+            <div class="skill-tag">Certification Design</div>
+            <div class="skill-tag">Strategic Program Ownership</div>
+            <div class="skill-tag">Scalable Onboarding</div>
+            <div class="skill-tag">LMS Implementation</div>
+            <div class="skill-tag">Stakeholder Alignment (VP Level)</div>
+            <div class="skill-tag">Kirkpatrick Model (L2-L4)</div>
+            <div class="skill-tag">AI/Simulation Adoption</div>
+            <div class="skill-tag">Adult Learning (ADDIE)</div>
+            <div class="skill-tag">Vendor & Budget Management</div>
+            <div class="skill-tag">Learning Analytics</div>
+            <div class="skill-tag">Agile Scaling</div>
         </div>
     </section>
 
     <section id="projects" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
         <h2 class="text-2xl font-bold mb-8 text-white"><i class="fa-solid fa-flask text-[#bc8cff] mr-2"></i> Strategic Case Studies</h2>
-        <div class="grid grid-cols-1 gap-8">
+        <div class="space-y-8">
             <div class="reveal github-card p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="h-12 w-12 bg-[#238636]/20 flex items-center justify-center rounded-lg border border-[#238636]">
-                        <i class="fa-solid fa-chart-line text-[#3fb950] text-xl"></i>
+                <h3 class="text-2xl font-bold text-white mb-4">National Retail & Best Buy Onboarding</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div>
+                        <p class="text-[#58a6ff] font-bold mb-1 uppercase text-xs tracking-widest">The Challenge</p>
+                        <p class="text-[#8b949e]">Strengthen sales process and product knowledge across hubs to create sales-focused impact while maintaining experiential tone.</p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-white">National Retail Onboarding Redesign</h3>
-                        <p class="text-sm text-[#8b949e]">Methodology: ADDIE + Design Thinking</p>
-                    </div>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-                    <div class="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                        <p class="font-bold text-[#58a6ff] mb-1">ANALYZE</p>
-                        <p>Identified skill gaps in sales process and product knowledge across national hubs.</p>
-                    </div>
-                    <div class="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                        <p class="font-bold text-[#58a6ff] mb-1">DEVELOP</p>
-                        <p>Built 150+ performance observation rubrics and certified 45+ trainers for scale.</p>
-                    </div>
-                    <div class="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                        <p class="font-bold text-[#58a6ff] mb-1">IMPLEMENT</p>
-                        <p>Rolled out TTT program with real-time feedback loops and AI POS simulations.</p>
-                    </div>
-                    <div class="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                        <p class="font-bold text-[#58a6ff] mb-1">EVALUATE</p>
-                        <p class="text-[#3fb950] font-bold">Generated $10.83M ROI & 2bsp increase across 4 key KPIs.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="reveal github-card p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="h-12 w-12 bg-[#1f6feb]/20 flex items-center justify-center rounded-lg border border-[#1f6feb]">
-                        <i class="fa-solid fa-bolt text-[#58a6ff] text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white">Leadership Acceleration Initiative</h3>
-                        <p class="text-sm text-[#8b949e]">Focus: Operational Efficiency & Speed-to-Competency</p>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row gap-6">
-                    <div class="md:w-1/2 space-y-4">
-                        <p class="text-sm"><strong>The Problem:</strong> A 90-day ramp time was causing staffing bottlenecks for new leadership roles.</p>
-                        <p class="text-sm"><strong>The Solution:</strong> Architected a multi-platform environment (Virtual/Social/In-store) using Smartsheet for task-redundancy reduction.</p>
-                    </div>
-                    <div class="md:w-1/2 bg-[#0d1117] p-6 rounded border border-[#30363d] flex items-center justify-center">
-                        <div class="text-center">
-                            <p class="text-4xl font-extrabold text-[#3fb950]">85%</p>
-                            <p class="text-xs uppercase text-[#8b949e] font-bold tracking-widest">Reduction in Training Time</p>
-                            <p class="text-sm mt-2">90 Days &rarr; &lt;2 Weeks</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="metrics" class="max-w-6xl mx-auto px-6 py-12 scroll-mt-20">
-        <h2 class="text-2xl font-bold mb-8 reveal">Quantifiable Impact</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="reveal github-card p-6 border-l-4 border-l-[#3fb950]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2 tracking-widest">ROI Generated</p>
-                <p class="text-3xl font-bold text-white">$10.83M+</p>
-            </div>
-            <div class="reveal github-card p-6 border-l-4 border-l-[#58a6ff]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2 tracking-widest">Efficiency Gain</p>
-                <p class="text-3xl font-bold text-white">40%+</p>
-            </div>
-            <div class="reveal github-card p-6 border-l-4 border-l-[#bc8cff]">
-                <p class="text-xs uppercase font-bold text-[#8b949e] mb-2 tracking-widest">Redundancy Reduction</p>
-                <p class="text-3xl font-bold text-white">77%</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div class="reveal github-card p-6"><canvas id="efficiencyChart" height="250"></canvas></div>
-            <div class="reveal github-card p-8 flex flex-col justify-center text-center">
-                <h3 class="text-[#8b949e] uppercase text-xs font-bold mb-4">Workforce Supported</h3>
-                <p class="text-5xl font-extrabold text-white">14,249</p>
-                <p class="text-sm text-[#8b949e] mt-2 italic">Verizon Consumer Group (Sales & Support)</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="enterprise" class="max-w-6xl mx-auto px-6 py-12 mb-20">
-        <div class="reveal github-card p-8">
-            <h2 class="text-2xl font-bold mb-6 text-white">Education & Foundations</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <p class="font-bold text-[#58a6ff]">M.B.A.</p>
-                    <p class="text-sm text-[#8b949e]">University of Phoenix</p>
-                </div>
-                <div>
-                    <p class="font-bold text-[#58a6ff]">B.S. Communication Studies</p>
-                    <p class="text-sm text-[#8b949e]">Texas State University</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="border-t border-[#30363d] py-12 text-center text-[#8b949e] text-sm">
-        <p>&copy; 2025 Amanda Poley | Houston, TX</p>
-    </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        const ctx = document.getElementById('efficiencyChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Leadership (Days)', 'Tasks (Redundancy)', 'Launch (Weeks)'],
-                datasets: [{
-                    label: 'Before', data: [90, 35, 12], backgroundColor: '#f85149'
-                }, {
-                    label: 'After Optimization', data: [14, 8, 3], backgroundColor: '#58a6ff'
-                }]
-            },
-            options: {
-                responsive: true, maintainAspectRatio: false,
-                plugins: { legend: { labels: { color: '#c9d1d9' } } },
-                scales: {
-                    y: { grid: { color: '#30363d' }, ticks: { color: '#8b949e' } },
-                    x: { ticks: { color: '#8b949e' } }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+                        <p class="text-[#58a6ff] font-bold mb-1 uppercase text-xs tracking-widest">Strategic Action</p>
+                        <p class="text-[#8b94
